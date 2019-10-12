@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="io.logAnalysis"
+		module="core_2.11"
+		revision="0.1.0"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20191012082913"/>
+	<dependencies>
+		<module organisation="org.scalaz" name="scalaz-core_2.11">
+			<revision name="7.2.28" status="release" pubdate="20190628020905" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="69">
+				<license name="BSD-style" url="https://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2642" time="0" location="/Users/nyakio/.ivy2/cache/org.scalaz/scalaz-core_2.11/ivy-7.2.28.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.11/7.2.28/scalaz-core_2.11-7.2.28.pom"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="7.2.28" rev-constraint-default="7.2.28" rev-constraint-dynamic="7.2.28" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.11" type="bundle" ext="jar" status="no" details="" size="12640140" time="0" location="/Users/nyakio/.ivy2/cache/org.scalaz/scalaz-core_2.11/bundles/scalaz-core_2.11-7.2.28.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.11/7.2.28/scalaz-core_2.11-7.2.28.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.azakordonets" name="fabricator_2.11">
+			<revision name="2.1.5" status="release" pubdate="20170724083057" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/azakordonets/fabricator" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="38">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4872" time="0" location="/Users/nyakio/.ivy2/cache/com.github.azakordonets/fabricator_2.11/ivy-2.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/azakordonets/fabricator_2.11/2.1.5/fabricator_2.11-2.1.5.pom"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="2.1.5" rev-constraint-default="2.1.5" rev-constraint-dynamic="2.1.5" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="fabricator_2.11" type="jar" ext="jar" status="no" details="" size="458721" time="0" location="/Users/nyakio/.ivy2/cache/com.github.azakordonets/fabricator_2.11/jars/fabricator_2.11-2.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/azakordonets/fabricator_2.11/2.1.5/fabricator_2.11-2.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.github.lukehutch" name="fast-classpath-scanner">
+			<revision name="2.0.17" status="release" pubdate="20170216230322" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lukehutch/fast-classpath-scanner" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<license name="The MIT License (MIT)" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3746" time="0" location="/Users/nyakio/.ivy2/cache/io.github.lukehutch/fast-classpath-scanner/ivy-2.0.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/github/lukehutch/fast-classpath-scanner/2.0.17/fast-classpath-scanner-2.0.17.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="2.0.17" rev-constraint-default="2.0.17" rev-constraint-dynamic="2.0.17" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="fast-classpath-scanner" type="jar" ext="jar" status="no" details="" size="184673" time="0" location="/Users/nyakio/.ivy2/cache/io.github.lukehutch/fast-classpath-scanner/jars/fast-classpath-scanner-2.0.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/github/lukehutch/fast-classpath-scanner/2.0.17/fast-classpath-scanner-2.0.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.zxing" name="core">
+			<revision name="3.2.0" status="release" pubdate="20150215155526" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5400" time="0" location="/Users/nyakio/.ivy2/cache/com.google.zxing/core/ivy-3.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/zxing/core/3.2.0/core-3.2.0.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="3.2.0" rev-constraint-default="3.2.0" rev-constraint-dynamic="3.2.0" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="core" type="jar" ext="jar" status="no" details="" size="544173" time="0" location="/Users/nyakio/.ivy2/cache/com.google.zxing/core/jars/core-3.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/zxing/core/3.2.0/core-3.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.tototoshi" name="scala-csv_2.11">
+			<revision name="1.3.4" status="release" pubdate="20161109175719" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/tototoshi/scala-csv" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3057" time="0" location="/Users/nyakio/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/ivy-1.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.11/1.3.4/scala-csv_2.11-1.3.4.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="1.3.4" rev-constraint-default="1.3.4" rev-constraint-dynamic="1.3.4" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="scala-csv_2.11" type="jar" ext="jar" status="no" details="" size="53822" time="0" location="/Users/nyakio/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.3.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.11/1.3.4/scala-csv_2.11-1.3.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.inject" name="guice">
+			<revision name="3.0" status="release" pubdate="20110325211947" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4238" time="0" location="/Users/nyakio/.ivy2/cache/com.google.inject/guice/ivy-3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/guice/3.0/guice-3.0.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="3.0" rev-constraint-default="3.0" rev-constraint-dynamic="3.0" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="guice" type="jar" ext="jar" status="no" details="" size="710492" time="0" location="/Users/nyakio/.ivy2/cache/com.google.inject/guice/jars/guice-3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/guice/3.0/guice-3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.sonatype.sisu.inject" name="cglib">
+			<revision name="2.2.1-v20090111" status="release" pubdate="20110104161244" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/cglib/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3926" time="0" location="/Users/nyakio/.ivy2/cache/org.sonatype.sisu.inject/cglib/ivy-2.2.1-v20090111.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/sonatype/sisu/inject/cglib/2.2.1-v20090111/cglib-2.2.1-v20090111.pom"/>
+				<caller organisation="com.google.inject" name="guice" conf="compile, runtime" rev="2.2.1-v20090111" rev-constraint-default="2.2.1-v20090111" rev-constraint-dynamic="2.2.1-v20090111" callerrev="3.0"/>
+				<artifacts>
+					<artifact name="cglib" type="jar" ext="jar" status="no" details="" size="278864" time="0" location="/Users/nyakio/.ivy2/cache/org.sonatype.sisu.inject/cglib/jars/cglib-2.2.1-v20090111.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/sonatype/sisu/inject/cglib/2.2.1-v20090111/cglib-2.2.1-v20090111.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="asm" name="asm">
+			<revision name="3.1" status="release" pubdate="20080120133126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<metadata-artifact status="no" details="" size="2926" time="0" location="/Users/nyakio/.ivy2/cache/asm/asm/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
+				<caller organisation="org.sonatype.sisu.inject" name="cglib" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.2.1-v20090111"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="43033" time="0" location="/Users/nyakio/.ivy2/cache/asm/asm/jars/asm-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="aopalliance" name="aopalliance">
+			<revision name="1.0" status="release" pubdate="20070227014340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2417" time="0" location="/Users/nyakio/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
+				<caller organisation="com.google.inject" name="guice" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="3.0"/>
+				<artifacts>
+					<artifact name="aopalliance" type="jar" ext="jar" status="no" details="" size="4467" time="0" location="/Users/nyakio/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-validator" name="commons-validator">
+			<revision name="1.4.0" status="release" pubdate="20120129145436" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/validator/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8462" time="0" location="/Users/nyakio/.ivy2/cache/commons-validator/commons-validator/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-validator/commons-validator/1.4.0/commons-validator-1.4.0.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="commons-validator" type="jar" ext="jar" status="no" details="" size="176897" time="0" location="/Users/nyakio/.ivy2/cache/commons-validator/commons-validator/jars/commons-validator-1.4.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-validator/commons-validator/1.4.0/commons-validator-1.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-digester" name="commons-digester">
+			<revision name="1.8" status="release" pubdate="20061203213311" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/digester/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3351" time="0" location="/Users/nyakio/.ivy2/cache/commons-digester/commons-digester/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8.pom"/>
+				<caller organisation="commons-validator" name="commons-validator" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="commons-digester" type="jar" ext="jar" status="no" details="" size="143602" time="0" location="/Users/nyakio/.ivy2/cache/commons-digester/commons-digester/jars/commons-digester-1.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-beanutils" name="commons-beanutils">
+			<revision name="1.8.3" status="release" pubdate="20100324201600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/beanutils/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6591" time="0" location="/Users/nyakio/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.pom"/>
+				<caller organisation="commons-validator" name="commons-validator" conf="compile, runtime" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="commons-beanutils" type="jar" ext="jar" status="no" details="" size="232019" time="0" location="/Users/nyakio/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071126232410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4212" time="0" location="/Users/nyakio/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="commons-validator" name="commons-validator" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.4.0"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.8.3"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/Users/nyakio/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.iban4j" name="iban4j">
+			<revision name="2.1.1" status="release" pubdate="20140301183306" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://iban4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3772" time="0" location="/Users/nyakio/.ivy2/cache/org.iban4j/iban4j/ivy-2.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/iban4j/iban4j/2.1.1/iban4j-2.1.1.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="iban4j" type="jar" ext="jar" status="no" details="" size="36455" time="0" location="/Users/nyakio/.ivy2/cache/org.iban4j/iban4j/jars/iban4j-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/iban4j/iban4j/2.1.1/iban4j-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.spatial4j" name="spatial4j">
+			<revision name="0.4.1" status="release" pubdate="20140219091135" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spatial4j/spatial4j" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4157" time="0" location="/Users/nyakio/.ivy2/cache/com.spatial4j/spatial4j/ivy-0.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="spatial4j" type="bundle" ext="jar" status="no" details="" size="102177" time="0" location="/Users/nyakio/.ivy2/cache/com.spatial4j/spatial4j/bundles/spatial4j-0.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.assertj" name="assertj-core">
+			<revision name="3.1.0" status="release" pubdate="20150625103332" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6231" time="0" location="/Users/nyakio/.ivy2/cache/org.assertj/assertj-core/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/assertj/assertj-core/3.1.0/assertj-core-3.1.0.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="assertj-core" type="bundle" ext="jar" status="no" details="" size="748617" time="0" location="/Users/nyakio/.ivy2/cache/org.assertj/assertj-core/bundles/assertj-core-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/assertj/assertj-core/3.1.0/assertj-core-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.7" status="release" pubdate="20160329232502" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10288" time="0" location="/Users/nyakio/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="304075" time="0" location="/Users/nyakio/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.7" status="release" pubdate="20160329232356" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="8012" time="0" location="/Users/nyakio/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="470782" time="0" location="/Users/nyakio/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reflections" name="reflections">
+			<revision name="0.9.10" status="release" pubdate="20150516124630" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/ronmamo/reflections" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="WTFPL" url="http://www.wtfpl.net/"/>
+				<license name="The New BSD License" url="http://www.opensource.org/licenses/bsd-license.html"/>
+				<metadata-artifact status="no" details="" size="4248" time="0" location="/Users/nyakio/.ivy2/cache/org.reflections/reflections/ivy-0.9.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="0.9.10" rev-constraint-default="0.9.10" rev-constraint-dynamic="0.9.10" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="reflections" type="jar" ext="jar" status="no" details="" size="129763" time="0" location="/Users/nyakio/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.10/reflections-0.9.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="annotations">
+			<revision name="2.0.1" status="release" pubdate="20120730011801" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="GNU Lesser Public License" url="http://www.gnu.org/licenses/lgpl.html"/>
+				<metadata-artifact status="no" details="" size="2511" time="0" location="/Users/nyakio/.ivy2/cache/com.google.code.findbugs/annotations/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.pom"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="annotations" type="jar" ext="jar" status="no" details="" size="74557" time="0" location="/Users/nyakio/.ivy2/cache/com.google.code.findbugs/annotations/jars/annotations-2.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.18.2-GA" status="release" pubdate="20140527195509" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3199" time="0" location="/Users/nyakio/.ivy2/cache/org.javassist/javassist/ivy-3.18.2-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.pom"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="3.18.2-GA" rev-constraint-default="3.18.2-GA" rev-constraint-dynamic="3.18.2-GA" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="javassist" type="bundle" ext="jar" status="no" details="" size="714524" time="0" location="/Users/nyakio/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.2-GA.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="18.0" status="release" pubdate="20140825214834" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5524" time="0" location="/Users/nyakio/.ivy2/cache/com.google.guava/guava/ivy-18.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="18.0" rev-constraint-default="18.0" rev-constraint-dynamic="18.0" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2256213" time="0" location="/Users/nyakio/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.nscala-time" name="nscala-time_2.11">
+			<revision name="2.16.0" status="release" pubdate="20161224050315" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/nscala-time/nscala-time" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="Apache" url="http://www.opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2947" time="0" location="/Users/nyakio/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/ivy-2.16.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.11/2.16.0/nscala-time_2.11-2.16.0.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="2.16.0" rev-constraint-default="2.16.0" rev-constraint-dynamic="2.16.0" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="nscala-time_2.11" type="jar" ext="jar" status="no" details="" size="205003" time="0" location="/Users/nyakio/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.16.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.11/2.16.0/nscala-time_2.11-2.16.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.testng" name="testng">
+			<revision name="6.9.4" status="release" pubdate="20150509185654" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://testng.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache License, Version 2.0" url="http://apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4240" time="0" location="/Users/nyakio/.ivy2/cache/org.testng/testng/ivy-6.9.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/testng/testng/6.9.4/testng-6.9.4.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="6.9.4" rev-constraint-default="6.9.4" rev-constraint-dynamic="6.9.4" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="testng" type="jar" ext="jar" status="no" details="" size="865813" time="0" location="/Users/nyakio/.ivy2/cache/org.testng/testng/jars/testng-6.9.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/testng/testng/6.9.4/testng-6.9.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.beust" name="jcommander">
+			<revision name="1.48" status="release" pubdate="20150411054656" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://beust.com/jcommander" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3298" time="0" location="/Users/nyakio/.ivy2/cache/com.beust/jcommander/ivy-1.48.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/beust/jcommander/1.48/jcommander-1.48.pom"/>
+				<caller organisation="org.testng" name="testng" conf="compile, runtime" rev="1.48" rev-constraint-default="1.48" rev-constraint-dynamic="1.48" callerrev="6.9.4"/>
+				<artifacts>
+					<artifact name="jcommander" type="jar" ext="jar" status="no" details="" size="63504" time="0" location="/Users/nyakio/.ivy2/cache/com.beust/jcommander/jars/jcommander-1.48.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/beust/jcommander/1.48/jcommander-1.48.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.beanshell" name="bsh">
+			<revision name="2.0b4" status="release" pubdate="20060526041005" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="GNU LESSER GENERAL PUBLIC LICENSE" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="2431" time="0" location="/Users/nyakio/.ivy2/cache/org.beanshell/bsh/ivy-2.0b4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom"/>
+				<caller organisation="org.testng" name="testng" conf="compile, runtime" rev="2.0b4" rev-constraint-default="2.0b4" rev-constraint-dynamic="2.0b4" callerrev="6.9.4"/>
+				<artifacts>
+					<artifact name="bsh" type="jar" ext="jar" status="no" details="" size="281694" time="0" location="/Users/nyakio/.ivy2/cache/org.beanshell/bsh/jars/bsh-2.0b4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-json_2.11">
+			<revision name="2.6.0-RC2" status="release" pubdate="20170603165821" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4860" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.6.0-RC2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.6.0-RC2/play-json_2.11-2.6.0-RC2.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="2.6.0-RC2" rev-constraint-default="2.6.0-RC2" rev-constraint-dynamic="2.6.0-RC2" callerrev="2.1.5"/>
+				<artifacts>
+					<artifact name="play-json_2.11" type="jar" ext="jar" status="no" details="" size="1376466" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.6.0-RC2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.6.0-RC2/play-json_2.11-2.6.0-RC2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310">
+			<revision name="2.8.8" status="release" pubdate="20170405064748" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21226" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.8/jackson-datatype-jsr310-2.8.8.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.8.8" rev-constraint-default="2.8.8" rev-constraint-dynamic="2.8.8" callerrev="2.6.0-RC2"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jsr310" type="bundle" ext="jar" status="no" details="" size="90056" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.8.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.8/jackson-datatype-jsr310-2.8.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8">
+			<revision name="2.8.8" status="release" pubdate="20170405064725" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="20932" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.8/jackson-datatype-jdk8-2.8.8.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.8.8" rev-constraint-default="2.8.8" rev-constraint-dynamic="2.8.8" callerrev="2.6.0-RC2"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jdk8" type="bundle" ext="jar" status="no" details="" size="25845" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.8.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.8/jackson-datatype-jdk8-2.8.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.11">
+			<revision name="2.6.0-RC2" status="release" pubdate="20170603165746" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2690" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.6.0-RC2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.6.0-RC2/play-functional_2.11-2.6.0-RC2.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.6.0-RC2" rev-constraint-default="2.6.0-RC2" rev-constraint-dynamic="2.6.0-RC2" callerrev="2.6.0-RC2"/>
+				<artifacts>
+					<artifact name="play-functional_2.11" type="jar" ext="jar" status="no" details="" size="411065" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.6.0-RC2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.6.0-RC2/play-functional_2.11-2.6.0-RC2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.0" status="release" pubdate="20150508184611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="37">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2875" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe/config/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.0/config-1.3.0.pom"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="277782" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.0/config-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sksamuel.avro4s" name="avro4s-core_2.11">
+			<revision name="1.8.3" status="release" pubdate="20180219102849" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sksamuel/avro4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="33">
+				<license name="MIT" url="https://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3581" time="0" location="/Users/nyakio/.ivy2/cache/com.sksamuel.avro4s/avro4s-core_2.11/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sksamuel/avro4s/avro4s-core_2.11/1.8.3/avro4s-core_2.11-1.8.3.pom"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="avro4s-core_2.11" type="jar" ext="jar" status="no" details="" size="119377" time="0" location="/Users/nyakio/.ivy2/cache/com.sksamuel.avro4s/avro4s-core_2.11/jars/avro4s-core_2.11-1.8.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sksamuel/avro4s/avro4s-core_2.11/1.8.3/avro4s-core_2.11-1.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11">
+			<revision name="1.8.3" status="release" pubdate="20180219102834" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sksamuel/avro4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="MIT" url="https://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3575" time="0" location="/Users/nyakio/.ivy2/cache/com.sksamuel.avro4s/avro4s-macros_2.11/ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sksamuel/avro4s/avro4s-macros_2.11/1.8.3/avro4s-macros_2.11-1.8.3.pom"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-core_2.11" conf="default, compile, runtime, master" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.8.3"/>
+				<artifacts>
+					<artifact name="avro4s-macros_2.11" type="jar" ext="jar" status="no" details="" size="335744" time="0" location="/Users/nyakio/.ivy2/cache/com.sksamuel.avro4s/avro4s-macros_2.11/jars/avro4s-macros_2.11-1.8.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sksamuel/avro4s/avro4s-macros_2.11/1.8.3/avro4s-macros_2.11-1.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.11">
+			<revision name="2.3.2" status="release" pubdate="20160818145130" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3226" time="0" location="/Users/nyakio/.ivy2/cache/com.chuusai/shapeless_2.11/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2.pom"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.8.3"/>
+				<artifacts>
+					<artifact name="shapeless_2.11" type="bundle" ext="jar" status="no" details="" size="3522616" time="0" location="/Users/nyakio/.ivy2/cache/com.chuusai/shapeless_2.11/bundles/shapeless_2.11-2.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="macro-compat_2.11">
+			<revision name="1.1.1" status="release" pubdate="20160215135037" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/macro-compat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="/Users/nyakio/.ivy2/cache/org.typelevel/macro-compat_2.11/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1.pom"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.3.2"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.6.0-RC2"/>
+				<artifacts>
+					<artifact name="macro-compat_2.11" type="jar" ext="jar" status="no" details="" size="3142" time="0" location="/Users/nyakio/.ivy2/cache/org.typelevel/macro-compat_2.11/jars/macro-compat_2.11-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro-tools">
+			<revision name="1.9.0" status="release" pubdate="20190508222708" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="16139" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-tools/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-tools/1.9.0/avro-tools-1.9.0.pom"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="avro-tools" type="jar" ext="jar" status="no" details="" size="46895018" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-tools/jars/avro-tools-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-tools/1.9.0/avro-tools-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.jopt-simple" name="jopt-simple">
+			<revision name="5.0.4" status="release" pubdate="20170713181239" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jopt-simple.github.io/jopt-simple" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="The MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4262" time="0" location="/Users/nyakio/.ivy2/cache/net.sf.jopt-simple/jopt-simple/ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="jopt-simple" type="jar" ext="jar" status="no" details="" size="78146" time="0" location="/Users/nyakio/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="trevni-avro">
+			<revision name="1.9.0" status="release" pubdate="20190508222624" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="16072" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/trevni-avro/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/trevni-avro/1.9.0/trevni-avro-1.9.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="trevni-avro" type="jar" ext="jar" extra-classifier="tests" status="no" details="" size="38380" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/trevni-avro/jars/trevni-avro-1.9.0-tests.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/trevni-avro/1.9.0/trevni-avro-1.9.0-tests.jar"/>
+					</artifact>
+					<artifact name="trevni-avro" type="jar" ext="jar" status="no" details="" size="43258" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/trevni-avro/jars/trevni-avro-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/trevni-avro/1.9.0/trevni-avro-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="trevni-core">
+			<revision name="1.9.0" status="release" pubdate="20190508222532" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="15398" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/trevni-core/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/trevni-core/1.9.0/trevni-core-1.9.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="trevni-avro" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="trevni-core" type="jar" ext="jar" status="no" details="" size="47787" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/trevni-core/jars/trevni-core-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/trevni-core/1.9.0/trevni-core-1.9.0.jar"/>
+					</artifact>
+					<artifact name="trevni-core" type="jar" ext="jar" extra-classifier="tests" status="no" details="" size="18436" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/trevni-core/jars/trevni-core-1.9.0-tests.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/trevni-core/1.9.0/trevni-core-1.9.0-tests.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-cli" name="commons-cli">
+			<revision name="1.4" status="release" pubdate="20170309160200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-cli/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11817" time="0" location="/Users/nyakio/.ivy2/cache/commons-cli/commons-cli/ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="commons-cli" type="jar" ext="jar" status="no" details="" size="53820" time="0" location="/Users/nyakio/.ivy2/cache/commons-cli/commons-cli/jars/commons-cli-1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro-mapred">
+			<revision name="1.9.0" status="release" pubdate="20190508222601" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="15241" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-mapred/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.9.0/avro-mapred-1.9.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="trevni-avro" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="avro-mapred" type="jar" ext="jar" status="no" details="" size="187578" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-mapred/jars/avro-mapred-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.9.0/avro-mapred-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro-ipc-jetty">
+			<revision name="1.9.0" status="release" pubdate="20190508222447" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="14832" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-ipc-jetty/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc-jetty/1.9.0/avro-ipc-jetty-1.9.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-mapred" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="avro-ipc-jetty" type="bundle" ext="jar" status="no" details="" size="13276" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-ipc-jetty/bundles/avro-ipc-jetty-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc-jetty/1.9.0/avro-ipc-jetty-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlet">
+			<revision name="9.4.15.v20190215" status="release" pubdate="20190215195728" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="12805" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-servlet/ivy-9.4.15.v20190215.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.4.15.v20190215/jetty-servlet-9.4.15.v20190215.pom"/>
+				<caller organisation="org.apache.avro" name="avro-ipc-jetty" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="jetty-servlet" type="jar" ext="jar" status="no" details="" size="121158" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-servlet/jars/jetty-servlet-9.4.15.v20190215.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.4.15.v20190215/jetty-servlet-9.4.15.v20190215.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-security">
+			<revision name="9.4.15.v20190215" status="release" pubdate="20190215195655" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="12626" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-security/ivy-9.4.15.v20190215.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.4.15.v20190215/jetty-security-9.4.15.v20190215.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlet" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="9.4.15.v20190215"/>
+				<artifacts>
+					<artifact name="jetty-security" type="jar" ext="jar" status="no" details="" size="114921" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-security/jars/jetty-security-9.4.15.v20190215.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.4.15.v20190215/jetty-security-9.4.15.v20190215.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-server">
+			<revision name="9.4.15.v20190215" status="release" pubdate="20190215195627" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="13223" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-server/ivy-9.4.15.v20190215.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.4.15.v20190215/jetty-server-9.4.15.v20190215.pom"/>
+				<caller organisation="org.apache.avro" name="avro-ipc-jetty" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="1.9.0"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-security" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="9.4.15.v20190215"/>
+				<artifacts>
+					<artifact name="jetty-server" type="jar" ext="jar" status="no" details="" size="638951" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-9.4.15.v20190215.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.4.15.v20190215/jetty-server-9.4.15.v20190215.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-http">
+			<revision name="9.4.15.v20190215" status="release" pubdate="20190215195501" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="12785" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-9.4.15.v20190215.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.15.v20190215/jetty-http-9.4.15.v20190215.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="9.4.15.v20190215"/>
+				<artifacts>
+					<artifact name="jetty-http" type="jar" ext="jar" status="no" details="" size="202669" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-9.4.15.v20190215.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.15.v20190215/jetty-http-9.4.15.v20190215.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-io">
+			<revision name="9.4.15.v20190215" status="release" pubdate="20190215195430" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="12327" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-9.4.15.v20190215.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.15.v20190215/jetty-io-9.4.15.v20190215.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="9.4.15.v20190215"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-http" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="9.4.15.v20190215"/>
+				<artifacts>
+					<artifact name="jetty-io" type="jar" ext="jar" status="no" details="" size="150797" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-9.4.15.v20190215.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.15.v20190215/jetty-io-9.4.15.v20190215.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-util">
+			<revision name="9.4.15.v20190215" status="release" pubdate="20190215195403" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="12865" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-9.4.15.v20190215.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.15.v20190215/jetty-util-9.4.15.v20190215.pom"/>
+				<caller organisation="org.apache.avro" name="avro-ipc-jetty" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="1.9.0"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-http" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="9.4.15.v20190215"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-io" conf="compile, runtime" rev="9.4.15.v20190215" rev-constraint-default="9.4.15.v20190215" rev-constraint-dynamic="9.4.15.v20190215" callerrev="9.4.15.v20190215"/>
+				<artifacts>
+					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="511879" time="0" location="/Users/nyakio/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-9.4.15.v20190215.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.15.v20190215/jetty-util-9.4.15.v20190215.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro-ipc">
+			<revision name="1.9.0" status="release" pubdate="20190508222427" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="15006" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-ipc/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc/1.9.0/avro-ipc-1.9.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-ipc-jetty" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-mapred" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="avro-ipc" type="jar" ext="jar" status="no" details="" size="184439" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-ipc/jars/avro-ipc-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc/1.9.0/avro-ipc-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.annotation" name="javax.annotation-api">
+			<revision name="1.3.2" status="release" pubdate="20180221132424" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcp.org/en/jsr/detail?id=250" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://github.com/javaee/javax.annotation/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="4192" time="0" location="/Users/nyakio/.ivy2/cache/javax.annotation/javax.annotation-api/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.pom"/>
+				<caller organisation="org.apache.avro" name="avro-ipc" conf="compile, runtime" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="javax.annotation-api" type="jar" ext="jar" status="no" details="" size="26586" time="0" location="/Users/nyakio/.ivy2/cache/javax.annotation/javax.annotation-api/jars/javax.annotation-api-1.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="javax.servlet-api">
+			<revision name="3.1.0" status="release" pubdate="20130426025239" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://servlet-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="4276" time="0" location="/Users/nyakio/.ivy2/cache/javax.servlet/javax.servlet-api/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="9.4.15.v20190215"/>
+				<artifacts>
+					<artifact name="javax.servlet-api" type="jar" ext="jar" status="no" details="" size="95806" time="0" location="/Users/nyakio/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro-compiler">
+			<revision name="1.9.0" status="release" pubdate="20190508222333" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="14532" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-compiler/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-compiler/1.9.0/avro-compiler-1.9.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="avro-compiler" type="bundle" ext="jar" status="no" details="" size="110536" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro-compiler/bundles/avro-compiler-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-compiler/1.9.0/avro-compiler-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.velocity" name="velocity-engine-core">
+			<revision name="2.0" status="release" pubdate="20170717135526" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6606" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.velocity/velocity-engine-core/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/velocity/velocity-engine-core/2.0/velocity-engine-core-2.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-compiler" conf="compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-ipc" conf="compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="velocity-engine-core" type="jar" ext="jar" status="no" details="" size="432111" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.velocity/velocity-engine-core/jars/velocity-engine-core-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/velocity/velocity-engine-core/2.0/velocity-engine-core-2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.8.1" status="release" pubdate="20180919182429" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="14915" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.pom"/>
+				<caller organisation="org.apache.avro" name="avro-compiler" conf="compile, runtime" rev="3.8.1" rev-constraint-default="3.8.1" rev-constraint-dynamic="3.8.1" callerrev="1.9.0"/>
+				<caller organisation="org.apache.velocity" name="velocity-engine-core" conf="compile, runtime" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="2.0"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="501879" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.8.1"/>
+				<caller organisation="org.apache.velocity" name="velocity-engine-core" conf="compile, runtime" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="2.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.9.9" status="release" pubdate="20190516055654" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7874" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.9/jackson-annotations-2.9.9.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.0" callerrev="2.9.9"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.0" callerrev="2.8.8"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.8" callerrev="2.6.0-RC2"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="66897" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.9.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.9/jackson-annotations-2.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.9.9" status="release" pubdate="20190516061018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="23693" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.8" callerrev="1.9.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.8" callerrev="2.8.8"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.8" callerrev="2.6.0-RC2"/>
+				<caller organisation="org.apache.avro" name="avro-compiler" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.8" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-ipc" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.8" callerrev="1.9.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.8" callerrev="2.8.8"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1348108" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.9.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.9.9" status="release" pubdate="20190516055911" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22913" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.8" callerrev="1.9.0"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="2.9.9"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.8" callerrev="1.9.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.8" callerrev="2.8.8"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.8" callerrev="2.6.0-RC2"/>
+				<caller organisation="org.apache.avro" name="avro-ipc" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.8" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-mapred" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.8" callerrev="1.9.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.8.8" callerrev="2.8.8"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="325632" time="0" location="/Users/nyakio/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.9.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro">
+			<revision name="1.9.0" status="release" pubdate="20190508222304" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="14656" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro/ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.9.0/avro-1.9.0.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-ipc-jetty" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="trevni-avro" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11" conf="compile, runtime" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro-compiler" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="0.1.0"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-core_2.11" conf="default, compile, runtime, master" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro-ipc" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="avro" type="jar" ext="jar" status="no" details="" size="565774" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.avro/avro/jars/avro-1.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.9.0/avro-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.8.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.9.0"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11" conf="compile, runtime" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.8.3"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-core_2.11" conf="default, compile, runtime, master" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.8.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.1.7.3" status="release" pubdate="20190326073026" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xerial/snappy-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/nyakio/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.1.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.3/snappy-java-1.1.7.3.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.1.7.3" rev-constraint-default="1.1.7.3" rev-constraint-dynamic="1.1.7.3" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="trevni-core" conf="compile, runtime" rev="1.1.7.3" rev-constraint-default="1.1.7.3" rev-constraint-dynamic="1.1.7.3" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="snappy-java" type="bundle" ext="jar" status="no" details="" size="2021167" time="0" location="/Users/nyakio/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.7.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.3/snappy-java-1.1.7.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.18" status="release" pubdate="20180813102452" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://commons.apache.org/proper/commons-compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="16134" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.18/commons-compress-1.18.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.18" rev-constraint-default="1.18" rev-constraint-dynamic="1.18" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="trevni-core" conf="compile, runtime" rev="1.18" rev-constraint-default="1.18" rev-constraint-dynamic="1.18" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="591748" time="0" location="/Users/nyakio/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.18.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014023500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2506" time="0" location="/Users/nyakio/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="com.google.inject" name="guice" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="3.0"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="/Users/nyakio/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tukaani" name="xz">
+			<revision name="1.8" status="release" pubdate="20180104190947" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://tukaani.org/xz/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2404" time="0" location="/Users/nyakio/.ivy2/cache/org.tukaani/xz/ivy-1.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tukaani/xz/1.8/xz-1.8.pom"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="xz" type="jar" ext="jar" status="no" details="" size="108555" time="0" location="/Users/nyakio/.ivy2/cache/org.tukaani/xz/jars/xz-1.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.8/xz-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.10.4" status="release" pubdate="20190920145122" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="6">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6900" time="0" location="/Users/nyakio/.ivy2/cache/joda-time/joda-time/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.10.4/joda-time-2.10.4.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="2.6.0-RC2"/>
+				<caller organisation="org.apache.avro" name="avro-compiler" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.9.0"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="2.16.0"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="643037" time="0" location="/Users/nyakio/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.10.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.10.4/joda-time-2.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.4"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="2.6.0-RC2"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="compile, runtime" rev="2.9.7" rev-constraint-default="2.9.7" rev-constraint-dynamic="2.9.7" callerrev="2.16.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.9.9" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.4"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="2.6.0-RC2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.4"/>
+				<caller organisation="org.apache.avro" name="avro-compiler" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.9.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.2" status="release" pubdate="20111027225117" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://joda-convert.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3246" time="0" location="/Users/nyakio/.ivy2/cache/org.joda/joda-convert/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.pom"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.16.0"/>
+				<artifacts>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="38460" time="0" location="/Users/nyakio/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-simple">
+			<revision name="1.7.25" status="release" pubdate="20170316193640" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5357" time="0" location="/Users/nyakio/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.pom"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="15257" time="0" location="/Users/nyakio/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.scala-logging" name="scala-logging_2.11">
+			<revision name="3.9.0" status="release" pubdate="20180411130049" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/scala-logging" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="2">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3357" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe.scala-logging/scala-logging_2.11/ivy-3.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.11/3.9.0/scala-logging_2.11-3.9.0.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="3.7.1" rev-constraint-default="3.7.1" rev-constraint-dynamic="3.7.1" callerrev="2.1.5"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="3.9.0" rev-constraint-default="3.9.0" rev-constraint-dynamic="3.9.0" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="scala-logging_2.11" type="bundle" ext="jar" status="no" details="" size="82031" time="0" location="/Users/nyakio/.ivy2/cache/com.typesafe.scala-logging/scala-logging_2.11/bundles/scala-logging_2.11-3.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.11/3.9.0/scala-logging_2.11-3.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.7.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.9.0"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="3.7.1" rev-constraint-default="3.7.1" rev-constraint-dynamic="3.7.1" callerrev="2.1.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316123632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5188" time="0" location="/Users/nyakio/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="file:////Users/nyakio/.sbt/preloaded/org.slf4j/slf4j-api/1.7.25/ivys/ivy.xml"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-tools" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="trevni-avro" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<caller organisation="org.slf4j" name="slf4j-simple" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.7.25"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11" conf="compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="trevni-core" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-compiler" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-core_2.11" conf="default, compile, runtime, master" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.8.3"/>
+				<caller organisation="org.apache.avro" name="avro-ipc-jetty" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.11" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.9.0"/>
+				<caller organisation="org.apache.velocity" name="velocity-engine-core" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.0"/>
+				<caller organisation="org.apache.avro" name="avro-ipc" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<caller organisation="org.apache.avro" name="avro-mapred" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41203" time="0" location="/Users/nyakio/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar">
+						<origin-location is-local="false" location="file:////Users/nyakio/.sbt/preloaded/org.slf4j/slf4j-api/1.7.25/jars/slf4j-api.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.20" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.25"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.12" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.25"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11" conf="compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.8.3"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-core_2.11" conf="default, compile, runtime, master" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.8.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.12" status="release" pubdate="20171103043736" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2829" time="0" location="/Users/nyakio/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.pom"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="3.9.0"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.8.3"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.6.0-RC2"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-core_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.8.3"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4623075" time="0" location="/Users/nyakio/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-json_2.11">
+			<revision name="1.3.5" status="release" pubdate="20181108161709" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3079" time="0" location="/Users/nyakio/.ivy2/cache/io.spray/spray-json_2.11/ivy-1.3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.11/1.3.5/spray-json_2.11-1.3.5.pom"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="1.3.5" rev-constraint-default="1.3.5" rev-constraint-dynamic="1.3.5" callerrev="0.1.0"/>
+				<artifacts>
+					<artifact name="spray-json_2.11" type="jar" ext="jar" status="no" details="" size="308433" time="0" location="/Users/nyakio/.ivy2/cache/io.spray/spray-json_2.11/jars/spray-json_2.11-1.3.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.11/1.3.5/spray-json_2.11-1.3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.3.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<evicted-by rev="1.3.5"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="1.3.4" rev-constraint-default="1.3.4" rev-constraint-dynamic="1.3.4" callerrev="0.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.12" status="release" pubdate="20171103043730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/nyakio/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.pom"/>
+				<caller organisation="com.github.azakordonets" name="fabricator_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.1.5"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-macros_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.8.3"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="7.2.28"/>
+				<caller organisation="io.spray" name="spray-json_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.3.5"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.6.0-RC2"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.11.12"/>
+				<caller organisation="com.typesafe.play" name="play-functional_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.6.0-RC2"/>
+				<caller organisation="io.logAnalysis" name="core_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="0.1.0"/>
+				<caller organisation="com.sksamuel.avro4s" name="avro4s-core_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.8.3"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.3.2"/>
+				<caller organisation="org.typelevel" name="macro-compat_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.1.1"/>
+				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="3.9.0"/>
+				<caller organisation="com.github.nscala-time" name="nscala-time_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.16.0"/>
+				<caller organisation="com.github.tototoshi" name="scala-csv_2.11" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.3.4"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5749423" time="0" location="/Users/nyakio/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

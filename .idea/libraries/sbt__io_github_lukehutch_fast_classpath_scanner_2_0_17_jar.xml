@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: io.github.lukehutch:fast-classpath-scanner:2.0.17:jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/io.github.lukehutch/fast-classpath-scanner/jars/fast-classpath-scanner-2.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/io.github.lukehutch/fast-classpath-scanner/srcs/fast-classpath-scanner-2.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

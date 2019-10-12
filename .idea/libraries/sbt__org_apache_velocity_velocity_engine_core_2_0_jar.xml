@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.apache.velocity:velocity-engine-core:2.0:jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/org.apache.velocity/velocity-engine-core/jars/velocity-engine-core-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/org.apache.velocity/velocity-engine-core/srcs/velocity-engine-core-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

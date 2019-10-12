@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.assertj:assertj-core:3.1.0:jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/org.assertj/assertj-core/bundles/assertj-core-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.ivy2/cache/org.assertj/assertj-core/srcs/assertj-core-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

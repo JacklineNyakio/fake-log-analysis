@@ -1,0 +1,111 @@
+version: '3'
+
+services:
+#  scylla:
+#    image: scylladb/scylla:2.2.0
+#    networks:
+#      - scylla
+#    volumes:
+#      - ./data/scylla:/var/lib/scylla
+#    command: "--smp 1 --memory 256M --experimental 1"
+#
+#  spark-master:
+#    image: gettyimages/spark
+#    command: bin/spark-class org.apache.spark.deploy.master.Master -h spark-master
+#    hostname: master
+#    environment:
+#      MASTER: spark://spark-master:7077
+#      SPARK_CONF_DIR: /conf
+#      SPARK_PUBLIC_DNS: spark-master
+#    networks:
+#      - scylla
+#    expose:
+#      - 7001
+#      - 7002
+#      - 7003
+#      - 7004
+#      - 7005
+#      - 7006
+#      - 7077
+#      - 6066
+#    ports:
+#      - 4040:4040
+#      - 6066:6066
+#      - 7077:7077
+#      - 8080:8080
+#    volumes:
+#      - ./data/spark-master:/tmp/data
+#
+#  spark-worker:
+#    image: gettyimages/spark
+#    command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+#    hostname: spark-worker
+#    environment:
+#      SPARK_WORKER_CORES: 2
+#      SPARK_WORKER_MEMORY: 1960m
+#      SPARK_WORKER_PORT: 8881
+#      SPARK_WORKER_WEBUI_PORT: 8081
+#      SPARK_PUBLIC_DNS: spark-worker
+#    networks:
+#      - scylla
+#    expose:
+#      - 7012
+#      - 7013
+#      - 7014
+#      - 7015
+#      - 7016
+#      - 8881
+#    ports:
+#      - 8081:8081
+#    volumes:
+#      - ./data/spark-worker:/tmp/data
+#    depends_on:
+#      - spark-master
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:5.3.0
+    hostname: zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  broker:
+    image: confluentinc/cp-enterprise-kafka:5.3.0
+    hostname: broker
+    container_name: broker
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_METRIC_REPORTERS: io.confluent.metrics.reporter.ConfluentMetricsReporter
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS: broker:29092
+      CONFLUENT_METRICS_REPORTER_ZOOKEEPER_CONNECT: zookeeper:2181
+      CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
+      CONFLUENT_METRICS_ENABLE: 'true'
+      CONFLUENT_SUPPORT_CUSTOMER_ID: 'anonymous'
+
+  schema-registry:
+    image: confluentinc/cp-schema-registry:5.3.0
+    hostname: schema-registry
+    container_name: schema-registry
+    depends_on:
+      - zookeeper
+      - broker
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: 'zookeeper:2181'
+
+networks:
+  scylla:
